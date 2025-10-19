@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tanmoy Sarker — Front-End Developer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: "Poppins", sans-serif; scroll-behavior: smooth; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg,#6b46c1,#4c1d95); border-radius: 9999px; }
+    .skill-bar > div { transition: width 1.5s ease-in-out; }
+    nav a.active { color: #facc15; font-weight: 600; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-[#0f172a]/70 backdrop-blur-lg z-50 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold text-yellow-300">Tanmoy.dev</h1>
+      <button id="menuBtn" class="lg:hidden text-yellow-300 text-2xl">☰</button>
+      <ul id="menu" class="hidden lg:flex gap-6 text-sm">
+        <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#skills" class="hover:text-yellow-300">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-yellow-300">Portfolio</a></li>
+        <li><a href="#blog" class="hover:text-yellow-300">Blog</a></li>
+        <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#2b0641]/90 flex-col space-y-2 px-4 py-3">
+      <a href="#home" class="hover:text-yellow-300 block">Home</a>
+      <a href="#skills" class="hover:text-yellow-300 block">Skills</a>
+      <a href="#portfolio" class="hover:text-yellow-300 block">Portfolio</a>
+      <a href="#blog" class="hover:text-yellow-300 block">Blog</a>
+      <a href="#contact" class="hover:text-yellow-300 block">Contact</a>
+    </div>
+  </nav>
+
+  <!-- MAIN WRAPPER -->
+  <div class="pt-24 max-w-6xl mx-auto px-4 lg:px-6 space-y-10">
+
+    <!-- HERO -->
+    <section id="home" class="bg-white/5 p-6 rounded-2xl shadow-lg flex flex-col lg:flex-row gap-6 items-center">
+      <div class="flex-1 text-center lg:text-left">
+        <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight text-white">
+          I’m <span class="text-yellow-300">Tanmoy Sarker</span><br>
+          Front-End Developer
+        </h1>
+        <p class="mt-4 text-gray-300 text-sm lg:text-base">
+          I build responsive, accessible, and fast web interfaces using modern tools like Tailwind CSS, React, and JavaScript.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center lg:justify-start gap-3">
+          <a href="#contact" class="px-5 py-3 bg-yellow-400 text-black rounded-md font-semibold">Hire Me</a>
+          <a href="#portfolio" class="px-5 py-3 border border-white/20 rounded-md text-gray-200">My Work</a>
+        </div>
+      </div>
+      <div class="w-40 h-40 lg:w-56 lg:h-56 rounded-lg overflow-hidden bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center">
+        <img src="https://i.pravatar.cc/200?img=12" alt="Tanmoy photo" class="w-28 h-28 lg:w-40 lg:h-40 rounded-full border-4 border-white/10">
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-white/5 p-6 rounded-2xl shadow-lg">
+      <h3 class="text-center text-lg font-bold text-white">Skills</h3>
+      <p class="text-center text-gray-300 text-sm mt-2">Progress bars animate on scroll</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="skill-item">
+            <div class="flex justify-between text-sm"><span>HTML</span><span class="skill-value">0%</span></div>
+            <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden"><div class="h-3 bg-gradient-to-r from-purple-400 to-pink-500" data-target="90" style="width:0%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="flex justify-between text-sm"><span>CSS / Tailwind</span><span class="skill-value">0%</span></div>
+            <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden"><div class="h-3 bg-gradient-to-r from-purple-400 to-pink-500" data-target="88" style="width:0%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="flex justify-between text-sm"><span>JavaScript</span><span class="skill-value">0%</span></div>
+            <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden"><div class="h-3 bg-gradient-to-r from-purple-400 to-pink-500" data-target="80" style="width:0%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="flex justify-between text-sm"><span>React</span><span class="skill-value">0%</span></div>
+            <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden"><div class="h-3 bg-gradient-to-r from-purple-400 to-pink-500" data-target="75" style="width:0%"></div></div>
+          </div>
+        </div>
+        <div class="p-4 bg-white/5 rounded-lg">
+          <h4 class="font-semibold text-yellow-300">Tools I Use</h4>
+          <p class="text-sm text-gray-300 mt-2">Git • Vite • Figma • Chrome DevTools • VSCode</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="bg-white/5 p-6 rounded-2xl shadow-lg">
+      <h3 class="text-center text-lg font-bold text-white">Portfolio</h3>
+      <p class="text-center text-gray-300 text-sm mt-2">Some of my works</p>
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <img src="https://picsum.photos/400/300?1" class="rounded-lg object-cover w-full h-36 hover:scale-105 transition">
+        <img src="https://picsum.photos/400/300?2" class="rounded-lg object-cover w-full h-36 hover:scale-105 transition">
+        <img src="https://picsum.photos/400/300?3" class="rounded-lg object-cover w-full h-36 hover:scale-105 transition">
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="bg-white/5 p-6 rounded-2xl shadow-lg">
+      <h3 class="text-center text-lg font-bold text-white">Blog</h3>
+      <p class="text-center text-gray-300 text-sm mt-2">Latest articles</p>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-white/10 rounded-lg p-4"><h4 class="font-semibold text-yellow-300">Web Design Basics</h4><p class="text-sm text-gray-300 mt-2">Learn how to start building responsive websites.</p></div>
+        <div class="bg-white/10 rounded-lg p-4"><h4 class="font-semibold text-yellow-300">Tailwind Tips</h4><p class="text-sm text-gray-300 mt-2">Utility-first styling made simple.</p></div>
+        <div class="bg-white/10 rounded-lg p-4"><h4 class="font-semibold text-yellow-300">React State Tricks</h4><p class="text-sm text-gray-300 mt-2">Managing data flow effectively.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-white/5 p-6 rounded-2xl shadow-lg">
+      <h3 class="text-center text-lg font-bold text-white">Contact</h3>
+      <p class="text-center text-gray-300 text-sm mt-2">Let’s connect!</p>
+      <form id="contactForm" class="max-w-lg mx-auto mt-6 space-y-3">
+        <input type="text" placeholder="Your Name" class="w-full p-3 bg-white/10 rounded-md border border-white/10">
+        <input type="email" placeholder="Your Email" class="w-full p-3 bg-white/10 rounded-md border border-white/10">
+        <textarea placeholder="Message" rows="4" class="w-full p-3 bg-white/10 rounded-md border border-white/10"></textarea>
+        <button type="submit" class="w-full py-3 bg-yellow-400 rounded-md text-black font-semibold">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="text-center text-gray-400 text-sm py-6">
+      © <span id="year"></span> Tanmoy Sarker — Built with ❤️ using TailwindCSS
+    </footer>
+  </div>
+
+  <script>
+    // Navbar active highlight on scroll
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        if (pageYOffset >= top) current = section.getAttribute("id");
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) link.classList.add("active");
+      });
+    });
+
+    // Mobile menu toggle
+    document.getElementById("menuBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+
+    // Skill animation on scroll
+    const skillBars = document.querySelectorAll(".skill-bar > div");
+    const skillValues = document.querySelectorAll(".skill-item .skill-value");
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          skillBars.forEach((bar, idx) => {
+            const target = parseInt(bar.dataset.target);
+            if (!bar.dataset.animated) {
+              bar.dataset.animated = true;
+              let current = 0;
+              const step = () => {
+                current += 2;
+                if (current <= target) {
+                  bar.style.width = current + "%";
+                  skillValues[idx].textContent = current + "%";
+                  requestAnimationFrame(step);
+                } else {
+                  bar.style.width = target + "%";
+                }
+              };
+              requestAnimationFrame(step);
+            }
+          });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    io.observe(document.querySelector("#skills"));
+
+    // Contact form
+    document.getElementById("contactForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Message sent successfully (demo only)");
+    });
+
+    // Footer year + console log
+    document.getElementById("year").textContent = new Date().getFullYear();
+    console.log("✅ Tanmoy’s portfolio loaded successfully!");
+  </script>
+</body>
+</html>

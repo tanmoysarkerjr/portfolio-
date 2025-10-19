@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tanmoy Sarker — Front-End Developer</title>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent1: #6b46c1;
+      --accent2: #4c1d95;
+      --muted: #f3f4f6;
+    }
+    body { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    /* subtle scrollbar */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06)); border-radius: 9999px; }
+    /* floating right toolbar */
+    .float-toolbar { right: 12px; top: 40%; }
+    /* skill bar transition */
+    .skill-bar > div { transition: width 1200ms cubic-bezier(.2,.9,.3,1); }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
+
+  <div class="min-h-screen max-w-6xl mx-auto px-4 lg:px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+    <!-- LEFT SIDEBAR PROFILE -->
+    <aside class="lg:col-span-3 bg-white/6 rounded-2xl p-6 sticky top-6 self-start shadow-lg">
+      <div class="flex flex-col items-center">
+        <img src="https://i.pravatar.cc/300?img=12" alt="Tanmoy" class="w-28 h-28 rounded-full ring-4 ring-white/10 mb-3">
+        <h2 class="text-xl font-bold">Tanmoy Sarker</h2>
+        <p class="text-sm text-gray-300">Front-End Developer</p>
+
+        <div class="w-full mt-4 text-left">
+          <ul class="text-xs text-gray-300 space-y-2">
+            <li><span class="font-semibold text-yellow-300">Age:</span> 24</li>
+            <li><span class="font-semibold text-yellow-300">Residence:</span> BD</li>
+            <li><span class="font-semibold text-yellow-300">Freelance:</span> Available</li>
+            <li><span class="font-semibold text-yellow-300">Address:</span> Dhaka, Bangladesh</li>
+          </ul>
+
+          <div class="mt-4">
+            <h3 class="text-sm text-gray-300 font-semibold">Languages</h3>
+            <div class="mt-2 space-y-2">
+              <div class="text-xs flex justify-between"><span>Bangla</span><span>100%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:100%" class="h-2 bg-yellow-400"></div></div>
+
+              <div class="text-xs flex justify-between"><span>English</span><span>80%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:80%" class="h-2 bg-yellow-400"></div></div>
+
+              <div class="text-xs flex justify-between"><span>Spanish</span><span>60%</span></div>
+              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:60%" class="h-2 bg-yellow-400"></div></div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <h3 class="text-sm text-gray-300 font-semibold">Skills</h3>
+            <div class="mt-2 space-y-3">
+              <div>
+                <div class="flex justify-between text-xs"><span>HTML</span><span>90%</span></div>
+                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs"><span>CSS</span><span>85%</span></div>
+                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs"><span>JavaScript</span><span>80%</span></div>
+                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:80%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between text-xs"><span>React</span><span>75%</span></div>
+                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 flex gap-2">
+            <a href="#" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-md bg-yellow-400 text-black font-semibold">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="lg:col-span-9 space-y-12">
+
+      <!-- HERO -->
+      <section id="home" class="bg-white/5 rounded-2xl p-8 shadow-lg">
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+          <div class="flex-1">
+            <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight text-white">
+              I’m <span class="text-yellow-300">Tanmoy Sarker</span><br>
+              Front-End Developer
+            </h1>
+            <p class="mt-4 text-gray-300 max-w-2xl">I build responsive, accessible, and fast user interfaces using modern tools like Tailwind CSS, React and vanilla JavaScript.</p>
+
+            <div class="mt-6 flex gap-3">
+              <a href="#contact" class="px-5 py-3 bg-yellow-400 text-black rounded-md font-semibold">Hire Me</a>
+              <a href="#portfolio" class="px-5 py-3 border border-white/10 rounded-md text-gray-200">My Work</a>
+            </div>
+          </div>
+
+          <div class="w-44 h-44 lg:w-56 lg:h-56 rounded-lg overflow-hidden bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center">
+            <img src="https://i.pravatar.cc/360?img=12" alt="Tanmoy photo" class="w-32 h-32 rounded-full border-4 border-white/10">
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES (small boxes) -->
+      <section class="bg-white/5 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-center text-lg font-bold text-white">My Services</h3>
+        <p class="text-center text-gray-300 text-sm mt-2">UI/UX Design, Web Development, Branding & more</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+          <div class="p-4 rounded-lg bg-white/3">
+            <div class="text-yellow-300 text-2xl mb-3">🖥️</div>
+            <h4 class="font-semibold">Web Development</h4>
+            <p class="text-sm text-gray-300 mt-2">Responsive websites, e-commerce, SPA</p>
+          </div>
+          <div class="p-4 rounded-lg bg-white/3">
+            <div class="text-yellow-300 text-2xl mb-3">🎨</div>
+            <h4 class="font-semibold">UI/UX Design</h4>
+            <p class="text-sm text-gray-300 mt-2">Mobile & web interfaces</p>
+          </div>
+          <div class="p-4 rounded-lg bg-white/3">
+            <div class="text-yellow-300 text-2xl mb-3">🎙️</div>
+            <h4 class="font-semibold">Branding</h4>
+            <p class="text-sm text-gray-300 mt-2">Identity & visual systems</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS (animated progress bars) -->
+      <section id="skills" class="bg-white/5 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-center text-lg font-bold text-white">Skills</h3>
+        <p class="text-center text-gray-300 text-sm mt-2">Technical skills — progress bars animate on scroll</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Left: skill detail -->
+          <div>
+            <div class="mb-4">
+              <h4 class="font-semibold">Front-end</h4>
+              <p class="text-sm text-gray-300">Building UI with modern tools — performance and accessibility focused.</p>
+            </div>
+
+            <div class="space-y-4">
+              <div class="skill-item">
+                <div class="flex justify-between text-sm"><span>HTML</span><span class="skill-value">0%</span></div>
+                <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                  <div class="h-3 rounded-full" data-target="90" style="width:0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between text-sm"><span>CSS / Tailwind</span><span class="skill-value">0%</span></div>
+                <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                  <div class="h-3 rounded-full" data-target="88" style="width:0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between text-sm"><span>JavaScript</span><span class="skill-value">0%</span></div>
+                <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                  <div class="h-3 rounded-full" data-target="80" style="width:0%"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="flex justify-between text-sm"><span>React</span><span class="skill-value">0%</span></div>
+                <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                  <div class="h-3 rounded-full" data-target="75" style="width:0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: extras / badges -->
+          <div class="flex flex-col gap-4">
+            <div class="p-4 rounded-lg bg-white/3">
+              <h4 class="font-semibold">Tools</h4>
+              <div class="mt-2 text-sm text-gray-300">Git • Webpack • Vite • Figma • Chrome DevTools</div>
+            </div>
+
+            <div class="p-4 rounded-lg bg-white/3">
+              <h4 class="font-semibold">Work style</h4>
+              <div class="mt-2 text-sm text-gray-300">Agile, TDD mindset, performance-first</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="bg-white/5 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-center text-lg font-bold text-white">Portfolio</h3>
+        <p class="text-center text-gray-300 text-sm mt-2">Selected works — filters and lightbox are ready to extend</p>
+
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <!-- 9 sample tiles -->
+          <div class="group relative overflow-hidden rounded-md bg-gradient-to-br from-purple-600 to-pink-500 h-36 flex items-center justify-center cursor-pointer">
+            <div class="text-white text-4xl opacity-20 group-hover:opacity-40 transition">+</div>
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?2" alt="project" class="object-cover w-full h-full">
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?3" alt="project" class="object-cover w-full h-full">
+          </div>
+
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?4" alt="project" class="object-cover w-full h-full">
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?5" alt="project" class="object-cover w-full h-full">
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?6" alt="project" class="object-cover w-full h-full">
+          </div>
+
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?7" alt="project" class="object-cover w-full h-full">
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?8" alt="project" class="object-cover w-full h-full">
+          </div>
+          <div class="rounded-md overflow-hidden h-36 bg-white/5">
+            <img src="https://picsum.photos/400/300?9" alt="project" class="object-cover w-full h-full">
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section id="blog" class="bg-white/5 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-center text-lg font-bold text-white">Blog</h3>
+        <p class="text-center text-gray-300 text-sm mt-2">Articles & how-tos</p>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <article class="bg-white/4 rounded-md overflow-hidden">
+            <img src="https://picsum.photos/600/400?10" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold">How To Make Web Templates</h4>
+              <p class="text-sm text-gray-300 mt-2">A short guide to building reusable web templates.</p>
+              <a href="#" class="text-yellow-300 mt-3 inline-block text-sm">Learn More →</a>
+            </div>
+          </article>
+
+          <article class="bg-white/4 rounded-md overflow-hidden">
+            <img src="https://picsum.photos/600/400?11" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold">Make Business Card</h4>
+              <p class="text-sm text-gray-300 mt-2">Design tips and resources for modern business cards.</p>
+              <a href="#" class="text-yellow-300 mt-3 inline-block text-sm">Learn More →</a>
+            </div>
+          </article>
+
+          <article class="bg-white/4 rounded-md overflow-hidden">
+            <img src="https://picsum.photos/600/400?12" class="w-full h-40 object-cover">
+            <div class="p-4">
+              <h4 class="font-semibold">How To Make Flyer Design</h4>
+              <p class="text-sm text-gray-300 mt-2">Effective layouts for event flyers and promotions.</p>
+              <a href="#" class="text-yellow-300 mt-3 inline-block text-sm">Learn More →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="bg-white/5 rounded-2xl p-6 shadow-lg">
+        <h3 class="text-center text-lg font-bold text-white">Contact</h3>
+        <p class="text-center text-gray-300 text-sm mt-2">Let's build something great together — send a message</p>
+
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form id="contactForm" class="space-y-4">
+            <input required type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-md bg-white/6 border border-white/6" />
+            <input required type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-white/6 border border-white/6" />
+            <input type="text" name="subject" placeholder="Subject" class="w-full p-3 rounded-md bg-white/6 border border-white/6" />
+            <textarea required name="message" rows="5" placeholder="Message" class="w-full p-3 rounded-md bg-white/6 border border-white/6"></textarea>
+            <button type="submit" class="px-5 py-3 bg-yellow-400 rounded-md text-black font-semibold">Send Message</button>
+          </form>
+
+          <div class="p-4 rounded-md bg-white/4">
+            <h4 class="font-semibold">Get in touch</h4>
+            <p class="text-sm text-gray-300 mt-2">Email: <span class="text-yellow-300">tanmoy@example.com</span></p>
+            <p class="text-sm text-gray-300 mt-2">Phone: <span class="text-yellow-300">+880 1XXXXXXXXX</span></p>
+            <div class="mt-4 space-y-2 text-sm text-gray-300">
+              <p>Availability: <span class="text-green-400">Open to work</span></p>
+              <p>Location: Dhaka, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="text-center text-sm text-gray-400 py-6">
+        © <span id="year"></span> Tanmoy Sarker — Built with ❤️ using TailwindCSS
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Floating right toolbar (icons) -->
+  <div class="fixed float-toolbar z-50 flex flex-col gap-3">
+    <a href="#home" class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🏠</a>
+    <a href="#portfolio" class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🖼️</a>
+    <a href="#blog" class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✍️</a>
+    <a href="#contact" class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✉️</a>
+  </div>
+
+  <!-- JavaScript: smooth scrolling, skill animation, contact demo -->
+  <script>
+    // Smooth scroll for anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if (href.startsWith('#')) {
+          const el = document.querySelector(href);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({behavior:'smooth', block:'start'});
+          }
+        }
+      });
+    });
+
+    // Set footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Skill animation on scroll using IntersectionObserver
+    const skillBars = document.querySelectorAll('.skill-bar > div');
+    const skillValues = document.querySelectorAll('.skill-item .skill-value');
+
+    const animateSkills = (el, valueSpan, target) => {
+      // animate width
+      el.style.width = target + '%';
+      // numeric counter
+      let current = 0;
+      const step = Math.max(1, Math.floor(target / 30));
+      const interval = setInterval(()=>{
+        current += step;
+        if (current >= target) { current = target; clearInterval(interval); }
+        valueSpan.textContent = current + '%';
+      }, 20);
+    };
+
+    const io = new IntersectionObserver((entries, observer)=>{
+      entries.forEach(entry=>{
+        if (entry.isIntersecting) {
+          skillBars.forEach((bar, idx)=>{
+            const target = parseInt(bar.dataset.target || '0', 10);
+            // only animate once
+            if (!bar.dataset.animated) {
+              bar.dataset.animated = 'true';
+              bar.classList.add('bg-gradient-to-r', 'from-purple-400', 'to-pink-500');
+              const valueSpan = skillValues[idx];
+              animateSkills(bar, valueSpan, target);
+            }
+          });
+          observer.disconnect();
+        }
+      });
+    }, {threshold: 0.2});
+
+    if (skillBars.length) {
+      io.observe(document.querySelector('#skills'));
+    }
+
+    // Contact form demo (no backend) — simple success message
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const orig = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending...';
+      setTimeout(()=>{
+        btn.disabled = false;
+        btn.innerHTML = orig;
+        alert('Thanks! Your message is demo-submitted. Replace with real backend endpoint.');
+        form.reset();
+      }, 900);
+    });
+  </script>
+</body>
+</html>
