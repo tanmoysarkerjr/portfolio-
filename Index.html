@@ -26,80 +26,89 @@
     /* skill bar transition */
     .skill-bar > div { transition: width 1200ms cubic-bezier(.2,.9,.3,1); }
   </style>
+
+
 </head>
 <body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
 
-  <div class="min-h-screen max-w-6xl mx-auto px-4 lg:px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+  <body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
 
-    <!-- LEFT SIDEBAR PROFILE -->
-    <aside class="lg:col-span-3 bg-white/6 rounded-2xl p-6 sticky top-6 self-start shadow-lg">
-      <div class="flex flex-col items-center">
-        <img src="Image/profile_picture.jpeg" alt="Tanmoy" class="w-28 h-28 rounded-full ring-4 ring-white/10 mb-3">
-        <h2 class="text-xl font-bold">Tanmoy Sarker</h2>
-        <p class="text-sm text-gray-300">Front-End Developer</p>
+    <div class="min-h-screen max-w-6xl mx-auto px-4 lg:px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+  
+     <!-- LEFT SIDEBAR PROFILE -->
+<aside
+class="lg:col-span-3 bg-white/6 rounded-2xl p-6 shadow-lg
+       lg:sticky lg:top-6 lg:self-start
+       max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/10"
+>
+<div class="flex flex-col items-center">
+  <img src="Image/profile_picture.jpeg" alt="Tanmoy"
+    class="w-28 h-28 rounded-full ring-4 ring-white/10 mb-3">
+  <h2 class="text-xl font-bold">Tanmoy Sarker</h2>
+  <p class="text-sm text-gray-300">Front-End Developer</p>
 
-        <div class="w-full mt-4 text-left">
-          <ul class="text-xs text-gray-300 space-y-2">
-            <li><span class="font-semibold text-yellow-300">Age:</span> 23</li>
-            <li><span class="font-semibold text-yellow-300">Residence:</span> Bangladesh</li>
-            <li><span class="font-semibold text-yellow-300">Freelance:</span> Available</li>
-            <li><span class="font-semibold text-yellow-300">Address:</span> Dhaka, Bangladesh</li>
-          </ul>
+  <div class="w-full mt-4 text-left">
+    <ul class="text-xs text-gray-300 space-y-2">
+      <li><span class="font-semibold text-yellow-300">Age:</span> 23</li>
+      <li><span class="font-semibold text-yellow-300">Residence:</span> Bangladesh</li>
+      <li><span class="font-semibold text-yellow-300">Freelance:</span> Available</li>
+      <li><span class="font-semibold text-yellow-300">Address:</span> Dhaka, Bangladesh</li>
+    </ul>
 
-          <div class="mt-4">
-            <h3 class="text-sm text-gray-300 font-semibold">Languages</h3>
-            <div class="mt-2 space-y-2">
-              <div class="text-xs flex justify-between"><span>Bangla</span><span>100%</span></div>
-              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:100%" class="h-2 bg-yellow-400"></div></div>
+    <div class="mt-4">
+      <h3 class="text-sm text-gray-300 font-semibold">Languages</h3>
+      <div class="mt-2 space-y-2">
+        <div class="text-xs flex justify-between"><span>Bangla</span><span>100%</span></div>
+        <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:100%" class="h-2 bg-yellow-400"></div></div>
 
-              <div class="text-xs flex justify-between"><span>English</span><span>80%</span></div>
-              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:80%" class="h-2 bg-yellow-400"></div></div>
+        <div class="text-xs flex justify-between"><span>English</span><span>80%</span></div>
+        <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:80%" class="h-2 bg-yellow-400"></div></div>
 
-              <div class="text-xs flex justify-between"><span>Hindi</span><span>60%</span></div>
-              <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:60%" class="h-2 bg-yellow-400"></div></div>
-            </div>
-          </div>
+        <div class="text-xs flex justify-between"><span>Hindi</span><span>60%</span></div>
+        <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div style="width:60%" class="h-2 bg-yellow-400"></div></div>
+      </div>
+    </div>
 
-          <div class="mt-4">
-            <h3 class="text-sm text-gray-300 font-semibold">Skills</h3>
-            <div class="mt-2 space-y-3">
-              <div>
-                <div class="flex justify-between text-xs"><span>HTML</span><span>90%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>CSS</span><span>85%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>Tailwind CSS</span><span>85%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>JavaScript</span><span>80%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:80%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>React</span><span>75%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>Git</span><span>90%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div></div>
-              </div>
-              <div>
-                <div class="flex justify-between text-xs"><span>Git Hub</span><span>90%</span></div>
-                <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-5 flex gap-2">
-            <a href="#" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-md bg-yellow-400 text-black font-semibold">Download CV</a>
-          </div>
+    <div class="mt-4">
+      <h3 class="text-sm text-gray-300 font-semibold">Skills</h3>
+      <div class="mt-2 space-y-3">
+        <div>
+          <div class="flex justify-between text-xs"><span>HTML</span><span>90%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>CSS</span><span>85%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>Tailwind CSS</span><span>85%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>JavaScript</span><span>80%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:80%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>React</span><span>75%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>Git</span><span>90%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-xs"><span>GitHub</span><span>90%</span></div>
+          <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div></div>
         </div>
       </div>
-    </aside>
+    </div>
+
+    <div class="mt-5 flex gap-2">
+      <a href="#" class="flex-1 inline-flex items-center justify-center px-3 py-2 rounded-md bg-yellow-400 text-black font-semibold">Download CV</a>
+    </div>
+  </div>
+</div>
+</aside>
 
     <!-- MAIN CONTENT -->
     <main class="lg:col-span-9 space-y-12">
@@ -127,28 +136,31 @@
       </section>
 
       <!-- SERVICES (small boxes) -->
-      <section class="bg-white/5 rounded-2xl p-6 shadow-lg">
-        <h3 class="text-center text-lg font-bold text-white">My Services</h3>
-        <p class="text-center text-gray-300 text-sm mt-2">UI/UX Design, Web Development, Branding & more</p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-          <div class="p-4 rounded-lg bg-white/3">
-            <div class="text-yellow-300 text-2xl mb-3">🖥️</div>
-            <h4 class="font-semibold">Web Development</h4>
-            <p class="text-sm text-gray-300 mt-2">Responsive websites, e-commerce, SPA</p>
+      <section id="services" class="mt-16 w-full max-w-6xl mx-auto bg-gradient-to-br from-purple-800/30 to-gray-900/40 rounded-2xl p-10 shadow-2xl">
+        <h2 class="text-center text-3xl font-bold text-white">My Services</h2>
+        <p class="text-center text-gray-300 text-sm mt-2">UI/UX Design, Web Development, Advertising & more</p>
+      
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          <div class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
+            <div class="text-yellow-400 text-4xl mb-3">💻</div>
+            <h3 class="font-semibold text-lg text-white mb-1">Web Development</h3>
+            <p class="text-gray-300 text-sm">Blog, E-Commerce</p>
           </div>
-          <div class="p-4 rounded-lg bg-white/3">
-            <div class="text-yellow-300 text-2xl mb-3">🎨</div>
-            <h4 class="font-semibold">UI/UX Design</h4>
-            <p class="text-sm text-gray-300 mt-2">Mobile & web interfaces</p>
+      
+          <div class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
+            <div class="text-yellow-400 text-4xl mb-3">🎨</div>
+            <h3 class="font-semibold text-lg text-white mb-1">UI/UX Design</h3>
+            <p class="text-gray-300 text-sm">Mobile App, Website Design</p>
           </div>
-          <div class="p-4 rounded-lg bg-white/3">
-            <div class="text-yellow-300 text-2xl mb-3">🎙️</div>
-            <h4 class="font-semibold">Branding</h4>
-            <p class="text-sm text-gray-300 mt-2">Identity & visual systems</p>
+      
+          <div class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
+            <div class="text-yellow-400 text-4xl mb-3">📢</div>
+            <h3 class="font-semibold text-lg text-white mb-1">Advertising</h3>
+            <p class="text-gray-300 text-sm">Social Media, Video Ads</p>
           </div>
         </div>
       </section>
+      
 
       <!-- SKILLS (animated progress bars) -->
       <section id="skills" class="bg-white/5 rounded-2xl p-6 shadow-lg">
@@ -253,7 +265,7 @@
               class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group"
             >
               <img
-                src="https://picsum.photos/400/300?3"
+                src="Image/web-landing-launchpad.png"
                 alt="news"
                 class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -272,12 +284,12 @@
       
             <!--  Item 3 -->
             <a
-              href="https://example.com/flowerfair"
+              href="https://github.com/tanmoysarkerjr/Mathematical-Helper-Toolkit"
               target="_blank"
               class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group"
             >
               <img
-                src="https://picsum.photos/400/300?4"
+                src="Image/Math Toolkit.png"
                 alt="news"
                 class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
@@ -429,7 +441,7 @@
 
       <!-- FOOTER -->
       <footer class="text-center text-sm text-gray-400 py-6">
-        © <span id="year"></span> Tanmoy Sarker — Built with ❤️ using TailwindCSS
+        © <span id="year"></span> Tanmoy Sarker
       </footer>
 
     </main>
