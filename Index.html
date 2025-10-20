@@ -52,17 +52,41 @@
   <!-- ======= NAVBAR ======= -->
   <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-lg shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
-      <h1 class="text-xl font-bold text-yellow-300">🌐 Tanmoy</h1>
+      <h1 class="text-xl font-bold text-yellow-300 flex items-center gap-2">
+        <img src="Image/code.png" alt="icon" class="w-12 h-14">
+        TANMOY Dev
+      </h1>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="#home" class="hover:text-yellow-300 transition">🏠 Home</a>
-        <a href="#services" class="hover:text-yellow-300 transition">🧰 Services</a>
-        <a href="#skills" class="hover:text-yellow-300 transition">⚡ Skills</a>
-        <a href="#news" class="hover:text-yellow-300 transition">🖼️ Projects</a>
-        <a href="#blog" class="hover:text-yellow-300 transition">✍️ Blog</a>
-        <a href="#contact" class="hover:text-yellow-300 transition">📞 Contact</a>
-      </nav>
+
+<!-- Desktop Nav -->
+<nav class="hidden md:flex space-x-6 text-lg font-medium">
+  <a href="#home" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/home.png" alt="Home" class="w-6 h-6">
+    Home
+  </a>
+  <a href="#services" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/customer-review.png" alt="Services" class="w-6 h-6">
+    Services
+  </a>
+  <a href="#skills" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/skill.png" alt="Skills" class="w-6 h-6">
+    Skills
+  </a>
+  <a href="#news" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/clipboard.png" alt="Projects" class="w-6 h-6">
+    Projects
+  </a>
+  <a href="#blog" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/blogger.png" alt="Blog" class="w-6 h-6">
+    Blog
+  </a>
+  <a href="#contact" class="flex items-center gap-2 hover:text-yellow-300 transition">
+    <img src="Image/email.png" alt="Contact" class="w-6 h-6">
+    Contact
+  </a>
+</nav>
+
+      
 
       <!-- Mobile Toggle -->
       <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">☰</button>
@@ -83,145 +107,139 @@
   <!-- Add top spacing so content isn’t hidden -->
   <div class="pt-[80px]"></div>
 
-<body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
+  <body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
 
     <body class="bg-gradient-to-br from-[#0f172a] via-[#2b0641] to-[#120928] text-gray-100">
-  
+
       <div class="min-h-screen max-w-6xl mx-auto px-4 lg:px-6 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-  
-<!-- LEFT SIDEBAR PROFILE -->
-<aside
-  class="lg:col-span-3 bg-white/5 rounded-2xl p-6 shadow-lg
-         lg:sticky lg:top-6 lg:self-start
-         max-h-[95vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/10">
-  <div class="flex flex-col items-center text-center">
-    
-    <!-- Profile Image -->
-    <img src="Image/profile_picture.jpeg" alt="Tanmoy" 
-         class="w-28 h-28 rounded-full ring-4 ring-white/10 mb-3">
-    
-    <!-- Name & Role -->
-    <h2 class="text-xl font-bold text-white">Tanmoy Sarker</h2>
-    <p class="text-sm text-gray-300">Front-End Developer</p>
+        <!-- LEFT SIDEBAR PROFILE -->
+        <aside class="lg:col-span-3 bg-white/5 rounded-2xl p-6 shadow-lg 
+  lg:sticky lg:top-6 lg:self-start 
+  max-h-[95vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/10 
+  [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-white/10">
 
-    <!-- Social Links -->
-    <div class="mt-5 w-full">
-      <div class="flex justify-center gap-4">
-        <a href="https://www.linkedin.com/in/tanmoysarkerjr" target="_blank"
-          class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-               class="w-5 h-5" alt="LinkedIn">
-          <span>LinkedIn</span>
-        </a>
+          <div class="flex flex-col items-center text-center">
+            <!-- Profile Image -->
+            <img src="Image/profile_picture.jpeg" alt="Tanmoy" class="w-28 h-28 rounded-full ring-4 ring-white/10 mb-3">
 
-        <a href="https://github.com/tanmoysarkerjr" target="_blank"
-          class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-               class="w-5 h-5" alt="GitHub">
-          <span>GitHub</span>
-        </a>
-      </div>
-    </div>
+            <!-- Name & Role -->
+            <h2 class="text-xl font-bold text-white">Tanmoy Sarker</h2>
+            <p class="text-sm text-gray-300">Front-End Developer</p>
 
-    <!-- Basic Info -->
-    <div class="w-full mt-6 text-left">
-      <ul class="text-xs text-gray-300 space-y-2">
-        <li><span class="font-semibold text-yellow-300">Age:</span> 23</li>
-        <li><span class="font-semibold text-yellow-300">Residence:</span> Bangladesh</li>
-        <li><span class="font-semibold text-yellow-300">Freelance:</span> Available</li>
-        <li><span class="font-semibold text-yellow-300">Address:</span> Dhaka, Bangladesh</li>
-      </ul>
+            <!-- Social Links -->
+            <div class="mt-5 w-full">
+              <div class="flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/tanmoy-sarker-593580273" target="_blank"
+                  class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    class="w-5 h-5" alt="LinkedIn">
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/tanmoysarkerjr" target="_blank"
+                  class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    class="w-5 h-5" alt="GitHub">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
 
-      <!-- Languages -->
-      <div class="mt-5">
-        <h3 class="text-sm text-gray-300 font-semibold mb-2">Languages</h3>
-        <div class="space-y-2">
-          <div>
-            <div class="flex justify-between text-xs"><span>Bangla</span><span>100%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-yellow-400" style="width:100%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>English</span><span>80%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-yellow-400" style="width:80%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>Hindi</span><span>60%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-yellow-400" style="width:60%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <!-- Basic Info -->
+            <div class="w-full mt-6 text-left">
+              <ul class="text-xs text-gray-300 space-y-2">
+                <li><span class="font-semibold text-yellow-300">Age:</span> 23</li>
+                <li><span class="font-semibold text-yellow-300">Residence:</span> Bangladesh</li>
+                <li><span class="font-semibold text-yellow-300">Freelance:</span> Available</li>
+                <li><span class="font-semibold text-yellow-300">Address:</span> Dhaka, Bangladesh</li>
+              </ul>
 
-      <!-- Skills -->
-      <div class="mt-5">
-        <h3 class="text-sm text-gray-300 font-semibold mb-2">Skills</h3>
-        <div class="space-y-3">
-          <div>
-            <div class="flex justify-between text-xs"><span>HTML</span><span>90%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>CSS</span><span>85%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>Tailwind CSS</span><span>85%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>JavaScript</span><span>80%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:80%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>React</span><span>75%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>Git</span><span>90%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-xs"><span>GitHub</span><span>90%</span></div>
-            <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-              <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+              <!-- Languages -->
+              <div class="mt-5">
+                <h3 class="text-sm text-gray-300 font-semibold mb-2">Languages</h3>
+                <div class="space-y-2">
+                  <div>
+                    <div class="flex justify-between text-xs"><span>Bangla</span><span>100%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-yellow-400" style="width:100%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>English</span><span>80%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-yellow-400" style="width:80%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>Hindi</span><span>60%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-yellow-400" style="width:60%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <!-- Download CV -->
-      <div class="mt-6">
-        <a href="CV/Tanmoy_Sarker_CV.pdf" download
-          class="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-yellow-400 text-black font-semibold hover:bg-yellow-300 transition">
-          📄 Download CV
-        </a>
-      </div>
-    </div>
-  </div>
-</aside>
+              <!-- Skills -->
+              <div class="mt-5">
+                <h3 class="text-sm text-gray-300 font-semibold mb-2">Skills</h3>
+                <div class="space-y-3">
+                  <div>
+                    <div class="flex justify-between text-xs"><span>HTML</span><span>90%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>CSS</span><span>85%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>Tailwind CSS</span><span>85%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:85%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>JavaScript</span><span>80%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:80%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>React</span><span>75%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:75%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>Git</span><span>90%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between text-xs"><span>GitHub</span><span>90%</span></div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500" style="width:90%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-
-  
+              <!-- Download CV -->
+              <div class="mt-6">
+                <a href="CV/Tanmoy_Sarker_CV.pdf" download
+                  class="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-yellow-400 text-black font-semibold hover:bg-yellow-300 transition">
+                  📄 Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
         <!-- MAIN CONTENT -->
         <main class="lg:col-span-9 space-y-12">
-  
+
           <!-- HERO -->
           <section id="home" class="bg-white/5 rounded-2xl p-8 shadow-lg">
             <div class="flex flex-col lg:flex-row gap-6 items-center">
@@ -232,13 +250,13 @@
                 </h1>
                 <p class="mt-4 text-gray-300 max-w-2xl">I build responsive, accessible, and fast user interfaces using
                   modern tools like Tailwind CSS, React and vanilla JavaScript.</p>
-  
+
                 <div class="mt-6 flex gap-3">
                   <a href="#contact" class="px-5 py-3 bg-yellow-400 text-black rounded-md font-semibold">Hire Me</a>
-                  <a href="#portfolio" class="px-5 py-3 border border-white/10 rounded-md text-gray-200">My Work</a>
+                  <a href="#news" class="px-5 py-3 border border-white/10 rounded-md text-gray-200">My Work</a>
                 </div>
               </div>
-  
+
               <div
                 class="w-44 h-44 lg:w-56 lg:h-56 rounded-lg overflow-hidden bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center">
                 <img src="Image/profile_picture.jpeg" alt="Tanmoy photo"
@@ -246,13 +264,13 @@
               </div>
             </div>
           </section>
-  
+
           <!-- SERVICES (small boxes) -->
           <section id="services"
             class="mt-16 w-full max-w-6xl mx-auto bg-gradient-to-br from-purple-800/30 to-gray-900/40 rounded-2xl p-10 shadow-2xl">
             <h2 class="text-center text-3xl font-bold text-white">My Services</h2>
             <p class="text-center text-gray-300 text-sm mt-2">UI/UX Design, Web Development, Advertising & more</p>
-  
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
               <div
                 class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
@@ -260,14 +278,14 @@
                 <h3 class="font-semibold text-lg text-white mb-1">Web Development</h3>
                 <p class="text-gray-300 text-sm">Blog, E-Commerce</p>
               </div>
-  
+
               <div
                 class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
                 <div class="text-yellow-400 text-4xl mb-3">🎨</div>
                 <h3 class="font-semibold text-lg text-white mb-1">UI/UX Design</h3>
                 <p class="text-gray-300 text-sm">Mobile App, Website Design</p>
               </div>
-  
+
               <div
                 class="p-6 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition transform hover:-translate-y-1">
                 <div class="text-yellow-400 text-4xl mb-3">📢</div>
@@ -276,78 +294,195 @@
               </div>
             </div>
           </section>
-  
-  
+
+
           <!-- SKILLS (animated progress bars) -->
           <section id="skills" class="bg-white/5 rounded-2xl p-6 shadow-lg">
             <h3 class="text-center text-lg font-bold text-white">Skills</h3>
-            <p class="text-center text-gray-300 text-sm mt-2">Technical skills — progress bars animate on scroll</p>
-  
+            <p class="text-center text-gray-300 text-sm mt-2">
+              Technical skills — progress bars animate on scroll
+            </p>
+
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
               <!-- Left: skill detail -->
               <div>
                 <div class="mb-4">
-                  <h4 class="font-semibold">Front-end</h4>
-                  <p class="text-sm text-gray-300">Building UI with modern tools — performance and accessibility focused.
+                  <h4 class="font-semibold text-white">Front-end</h4>
+                  <p class="text-sm text-gray-300">
+                    Building UI with modern tools — performance and accessibility focused.
                   </p>
                 </div>
-  
+
                 <div class="space-y-4">
+                  <!-- Each skill -->
                   <div class="skill-item">
-                    <div class="flex justify-between text-sm"><span>HTML</span><span class="skill-value">0%</span></div>
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                      <span class="skill-value">0%</span>
+                    </div>
                     <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
-                      <div class="h-3 rounded-full" data-target="90" style="width:0%"></div>
+                      <div class="h-3 bg-orange-500 rounded-full" data-target="90" style="width:0%"></div>
                     </div>
                   </div>
-  
+
                   <div class="skill-item">
-                    <div class="flex justify-between text-sm"><span>CSS / Tailwind</span><span
-                        class="skill-value">0%</span></div>
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-css3-plain colored"></i> CSS / Tailwind</span>
+                      <span class="skill-value">0%</span>
+                    </div>
                     <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
-                      <div class="h-3 rounded-full" data-target="88" style="width:0%"></div>
+                      <div class="h-3 bg-blue-500 rounded-full" data-target="88" style="width:0%"></div>
                     </div>
                   </div>
-  
+
                   <div class="skill-item">
-                    <div class="flex justify-between text-sm"><span>JavaScript</span><span class="skill-value">0%</span>
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                      <span class="skill-value">0%</span>
                     </div>
                     <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
-                      <div class="h-3 rounded-full" data-target="80" style="width:0%"></div>
+                      <div class="h-3 bg-yellow-400 rounded-full" data-target="80" style="width:0%"></div>
                     </div>
                   </div>
-  
+
                   <div class="skill-item">
-                    <div class="flex justify-between text-sm"><span>React</span><span class="skill-value">0%</span></div>
-                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
-                      <div class="h-3 rounded-full" data-target="75" style="width:0%"></div>
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-react-original colored"></i> React</span>
+                      <span class="skill-value">0%</span>
                     </div>
-                 
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-cyan-400 rounded-full" data-target="75" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <!-- New Programming Skills -->
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-c-plain colored"></i> C</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-sky-400 rounded-full" data-target="85" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-java-plain colored"></i> Java</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-red-500 rounded-full" data-target="78" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-python-plain colored"></i> Python</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-yellow-500 rounded-full" data-target="82" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-teal-400 rounded-full" data-target="77" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-bash-plain colored"></i> Shell</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-gray-400 rounded-full" data-target="70" style="width:0%"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="flex justify-between text-sm">
+                      <span><i class="devicon-php-plain colored"></i> PHP</span>
+                      <span class="skill-value">0%</span>
+                    </div>
+                    <div class="w-full h-3 bg-white/10 rounded-full skill-bar overflow-hidden">
+                      <div class="h-3 bg-indigo-400 rounded-full" data-target="65" style="width:0%"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-  
-              <!-- Right: extras / badges -->
+
+              <!-- Right: Extras / Badges -->
               <div class="flex flex-col gap-4">
                 <div class="p-4 rounded-lg bg-white/3">
-                  <h4 class="font-semibold">Tools</h4>
-                  <div class="mt-2 text-sm text-gray-300">Git • Webpack • Vite • Figma • Chrome DevTools</div>
+                  <h4 class="font-semibold text-white">Tools</h4>
+                  <div class="mt-2 text-sm text-gray-300">
+                    <i class="devicon-git-plain colored"></i> Git • Webpack • Vite • Figma • Chrome DevTools
+                  </div>
                 </div>
-  
+
                 <div class="p-4 rounded-lg bg-white/3">
-                  <h4 class="font-semibold">Work style</h4>
-                  <div class="mt-2 text-sm text-gray-300">Agile, TDD mindset, performance-first</div>
+                  <h4 class="font-semibold text-white">Work style</h4>
+                  <div class="mt-2 text-sm text-gray-300">
+                    Agile, TDD mindset, performance-first
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-lg bg-white/3">
+                  <h4 class="font-semibold text-white">Extra Knowledge</h4>
+                  <div class="mt-2 text-sm text-gray-300">
+                    ⚙️ Algorithm • 🧠 Data Structure • 💾 Database • 🤖 Machine Learning
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-  
+
+          <!-- Include Devicon CDN -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+          <!-- Animation Script -->
+          <script>
+            const skillItems = document.querySelectorAll(".skill-item");
+
+            function animateSkills() {
+              skillItems.forEach(item => {
+                const bar = item.querySelector(".skill-bar div");
+                const value = item.querySelector(".skill-value");
+                const target = parseInt(bar.getAttribute("data-target"));
+
+                const rect = item.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0 && bar.style.width === "0%") {
+                  let width = 0;
+                  const animate = setInterval(() => {
+                    if (width >= target) clearInterval(animate);
+                    else {
+                      width++;
+                      bar.style.width = width + "%";
+                      value.textContent = width + "%";
+                    }
+                  }, 10);
+                }
+              });
+            }
+
+            window.addEventListener("scroll", animateSkills);
+          </script>
+
+
           <!-- PORTFOLIO -->
           <section id="news" class="bg-white/5 rounded-2xl p-6 shadow-lg relative overflow-hidden">
             <h3 class="text-center text-lg font-bold text-white">Latest Project</h3>
             <p class="text-center text-gray-300 text-sm mt-2">
               Stay updated with our recent Project & announcements
             </p>
-  
+
             <!-- Slider Wrapper -->
             <div class="relative mt-6">
               <div id="news-slider" class="flex space-x-4 overflow-hidden scrollbar-hide scroll-smooth">
@@ -366,7 +501,7 @@
                     </p>
                   </div>
                 </a>
-  
+
                 <!-- Item 2 -->
                 <a href="https://example.com/garden" target="_blank"
                   class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group">
@@ -382,7 +517,7 @@
                     </p>
                   </div>
                 </a>
-  
+
                 <!--  Item 3 -->
                 <a href="https://github.com/tanmoysarkerjr/Mathematical-Helper-Toolkit" target="_blank"
                   class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group">
@@ -398,7 +533,7 @@
                     </p>
                   </div>
                 </a>
-  
+
                 <!--  Item 4 -->
                 <a href="https://example.com/design-tips" target="_blank"
                   class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group">
@@ -414,7 +549,7 @@
                     </p>
                   </div>
                 </a>
-  
+
                 <!--  Item 5 -->
                 <a href="https://example.com/team" target="_blank"
                   class="min-w-[300px] relative rounded-xl overflow-hidden bg-white/5 flex-shrink-0 group">
@@ -429,7 +564,7 @@
                   </div>
                 </a>
               </div>
-  
+
               <!-- Arrows -->
               <button id="prev"
                 class="absolute top-1/2 -translate-y-1/2 left-2 bg-white/70 hover:bg-white text-emerald-600 rounded-full p-2 shadow">
@@ -439,7 +574,7 @@
                 class="absolute top-1/2 -translate-y-1/2 right-2 bg-white/70 hover:bg-white text-emerald-600 rounded-full p-2 shadow">
                 ❯
               </button>
-  
+
               <!-- Dots -->
               <div class="flex justify-center mt-6 gap-2">
                 <div class="dot w-3 h-3 bg-white/40 rounded-full"></div>
@@ -450,14 +585,14 @@
               </div>
             </div>
           </section>
-  
+
           <!-- EDUCATION -->
           <section id="education" class="bg-white/5 rounded-2xl p-6 shadow-lg">
             <h3 class="text-center text-lg font-bold text-white">Education</h3>
             <p class="text-center text-gray-300 text-sm mt-2">My academic journey and qualifications</p>
-  
+
             <div class="mt-6 space-y-6">
-  
+
               <!-- High School -->
               <div class="p-5 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition">
                 <div class="flex justify-between items-center">
@@ -467,7 +602,7 @@
                 <p class="text-sm text-yellow-300 mt-1">Yousufgonj School & College, Narayanganj</p>
                 <p class="text-sm text-gray-300 mt-1">SSC — Science</p>
               </div>
-  
+
               <!-- College -->
               <div class="p-5 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition">
                 <div class="flex justify-between items-center">
@@ -478,7 +613,7 @@
                 </p>
                 <p class="text-sm text-gray-300 mt-1">HSC — Science</p>
               </div>
-  
+
               <!-- University -->
               <div class="p-5 rounded-xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition">
                 <div class="flex justify-between items-center">
@@ -489,15 +624,15 @@
                 </p>
                 <p class="text-sm text-gray-300 mt-1">B.Sc. in Computer Science and Engineering</p>
               </div>
-  
+
             </div>
           </section>
-  
+
           <!-- BLOG -->
           <section id="blog" class="bg-white/5 rounded-2xl p-6 shadow-lg">
             <h3 class="text-center text-lg font-bold text-white">Blog</h3>
             <p class="text-center text-gray-300 text-sm mt-2">Articles & how-tos</p>
-  
+
             <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <article class="bg-white/4 rounded-md overflow-hidden">
                 <img src="https://picsum.photos/600/400?10" class="w-full h-40 object-cover">
@@ -507,7 +642,7 @@
                   <a href="#" class="text-yellow-300 mt-3 inline-block text-sm">Learn More →</a>
                 </div>
               </article>
-  
+
               <article class="bg-white/4 rounded-md overflow-hidden">
                 <img src="https://picsum.photos/600/400?11" class="w-full h-40 object-cover">
                 <div class="p-4">
@@ -516,7 +651,7 @@
                   <a href="#" class="text-yellow-300 mt-3 inline-block text-sm">Learn More →</a>
                 </div>
               </article>
-  
+
               <article class="bg-white/4 rounded-md overflow-hidden">
                 <img src="https://picsum.photos/600/400?12" class="w-full h-40 object-cover">
                 <div class="p-4">
@@ -527,12 +662,12 @@
               </article>
             </div>
           </section>
-  
+
           <!-- CONTACT -->
           <section id="contact" class="bg-white/5 rounded-2xl p-6 shadow-lg">
             <h3 class="text-center text-lg font-bold text-white">Contact</h3>
             <p class="text-center text-gray-300 text-sm mt-2">Let's build something great together — send a message</p>
-  
+
             <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
               <form id="contactForm" class="space-y-4">
                 <input required type="text" name="name" placeholder="Your Name"
@@ -546,10 +681,11 @@
                 <button type="submit" class="px-5 py-3 bg-yellow-400 rounded-md text-black font-semibold">Send
                   Message</button>
               </form>
-  
+
               <div class="p-4 rounded-md bg-white/4">
                 <h4 class="font-semibold">Get in touch</h4>
-                <p class="text-sm text-gray-300 mt-2">Email: <span class="text-yellow-300">tanmoysarkerjr@gmail.com</span>
+                <p class="text-sm text-gray-300 mt-2">Email: <span
+                    class="text-yellow-300">tanmoysarkerjr@gmail.com</span>
                 </p>
                 <p class="text-sm text-gray-300 mt-2">Phone: <span class="text-yellow-300">+880 1641890259</span></p>
                 <div class="mt-4 space-y-2 text-sm text-gray-300">
@@ -559,65 +695,39 @@
               </div>
             </div>
           </section>
-  
-  
-  
+
+
+
           <!-- FOOTER -->
           <footer class="text-center text-sm text-gray-400 py-6">
             © <span id="year"></span> Tanmoy Sarker
           </footer>
-  
+
         </main>
       </div>
-  
-      <!-- Floating right toolbar (icons) -->
-      <div class="fixed float-toolbar z-50 flex flex-col gap-3">
-        <a href="#home"
-          class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🏠</a>
-        <a href="#portfolio"
-          class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🖼️</a>
-        <a href="#blog"
-          class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✍️</a>
-        <a href="#contact"
-          class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✉️</a>
-      </div>
+      <!-- ======= SCRIPTS ======= -->
+      <script>
+        // Navbar toggle for mobile
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
 
 
-  <!-- ======= FLOATING TOOLBAR (unchanged) ======= -->
-  <div class="fixed float-toolbar z-50 flex flex-col gap-3">
-    <a href="#home"
-      class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🏠</a>
-    <a href="#news"
-      class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">🖼️</a>
-    <a href="#blog"
-      class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✍️</a>
-    <a href="#contact"
-      class="w-11 h-11 rounded-full bg-white/6 flex items-center justify-center hover:scale-105 transition">✉️</a>
-  </div>
-
-  <!-- ======= SCRIPTS ======= -->
-  <script>
-    // Navbar toggle for mobile
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-
-  
       <!-- JavaScript: smooth scrolling, skill animation, contact demo -->
-  
-    
+
+
       <script>
         const slider = document.getElementById("news-slider");
         const dots = document.querySelectorAll(".dot");
         const nextBtn = document.getElementById("next");
         const prevBtn = document.getElementById("prev");
-  
+
         let index = 0;
         const total = slider.children.length;
-  
+
         function updateSlide() {
           slider.scrollTo({
             left: index * 320,
@@ -627,31 +737,31 @@
             dot.classList.toggle("bg-white", i === index)
           );
         }
-  
+
         function autoSlide() {
           index = (index + 1) % total;
           updateSlide();
         }
-  
+
         let interval = setInterval(autoSlide, 2500);
-  
+
         nextBtn.onclick = () => {
           index = (index + 1) % total;
           updateSlide();
         };
-  
+
         prevBtn.onclick = () => {
           index = (index - 1 + total) % total;
           updateSlide();
         };
-  
+
         slider.addEventListener("mouseenter", () => clearInterval(interval));
         slider.addEventListener("mouseleave", () => (interval = setInterval(autoSlide, 2500)));
-  
+
         updateSlide();
       </script>
       <script>
-  
+
         // Smooth scroll for anchors
         document.querySelectorAll('a[href^="#"]').forEach(a => {
           a.addEventListener('click', e => {
@@ -665,14 +775,14 @@
             }
           });
         });
-  
+
         // Set footer year
         document.getElementById('year').textContent = new Date().getFullYear();
-  
+
         // Skill animation on scroll using IntersectionObserver
         const skillBars = document.querySelectorAll('.skill-bar > div');
         const skillValues = document.querySelectorAll('.skill-item .skill-value');
-  
+
         const animateSkills = (el, valueSpan, target) => {
           // animate width
           el.style.width = target + '%';
@@ -685,7 +795,7 @@
             valueSpan.textContent = current + '%';
           }, 20);
         };
-  
+
         const io = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -703,11 +813,11 @@
             }
           });
         }, { threshold: 0.2 });
-  
+
         if (skillBars.length) {
           io.observe(document.querySelector('#skills'));
         }
-  
+
         // Contact form demo (no backend) — simple success message
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', (e) => {
@@ -725,7 +835,4 @@
         });
       </script>
     </body>
-  
-  </html>
-
-
+</html>
