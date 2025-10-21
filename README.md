@@ -1,7 +1,7 @@
 Tanmoy Sarker – Front-End Developer Portfolio
 Welcome to my personal portfolio! I'm Tanmoy Sarker, a passionate Front-End Developer based in Dhaka, Bangladesh. I specialize in crafting responsive, accessible, and high-performance user interfaces using modern web technologies.
 
-🔗 Live Demo: tanmoysarker.vercel.app
+🔗 Live Demo: https://tanmoysarker.vercel.app/
 
 
 🚀 About Me
